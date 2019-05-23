@@ -1,5 +1,10 @@
 
-# treeplanter
+# genebean-treeplanter
+
+![PDK badge](https://img.shields.io/puppetforge/pdk-version/genebean/treeplanter.svg?style=popout)
+![Puppet Forge badge](https://img.shields.io/puppetforge/v/genebean/treeplanter.svg?style=popout)
+![Download count badge](https://img.shields.io/puppetforge/dt/genebean/treeplanter.svg?style=popout)
+[![Build Status](https://travis-ci.org/genebean/genebean-treeplanter.svg?branch=master)](https://travis-ci.org/genebean/genebean-treeplanter)
 
 Welcome to your new module. A short overview of the generated parts can be found in the PDK documentation at https://puppet.com/pdk/latest/pdk_generating_modules.html .
 
@@ -7,14 +12,19 @@ The README template below provides a starting point with details about what info
 
 #### Table of Contents
 
-1. [Description](#description)
-2. [Setup - The basics of getting started with treeplanter](#setup)
-    * [What treeplanter affects](#what-treeplanter-affects)
-    * [Setup requirements](#setup-requirements)
-    * [Beginning with treeplanter](#beginning-with-treeplanter)
-3. [Usage - Configuration options and additional functionality](#usage)
-4. [Limitations - OS compatibility, etc.](#limitations)
-5. [Development - Guide for contributing to the module](#development)
+- [genebean-treeplanter](#genebean-treeplanter)
+      - [Table of Contents](#table-of-contents)
+  - [Description](#description)
+  - [Setup](#setup)
+    - [What treeplanter affects **OPTIONAL**](#what-treeplanter-affects-optional)
+    - [Setup Requirements **OPTIONAL**](#setup-requirements-optional)
+    - [Beginning with treeplanter](#beginning-with-treeplanter)
+  - [Usage](#usage)
+  - [Reference](#reference)
+  - [Changelog](#changelog)
+  - [Limitations](#limitations)
+  - [Development](#development)
+  - [Release Notes/Contributors/Etc. **Optional**](#release-notescontributorsetc-optional)
 
 ## Description
 
@@ -50,30 +60,15 @@ Include usage examples for common use cases in the **Usage** section. Show your 
 
 ## Reference
 
-This section is deprecated. Instead, add reference information to your code as Puppet Strings comments, and then use Strings to generate a REFERENCE.md in your module. For details on how to add code comments and generate documentation with Strings, see the Puppet Strings [documentation](https://puppet.com/docs/puppet/latest/puppet_strings.html) and [style guide](https://puppet.com/docs/puppet/latest/puppet_strings_style.html)
+This module is documented via
+`pdk bundle exec puppet strings generate --format markdown`.
+Please see [REFERENCE.md](REFERENCE.md) for more info.
 
-If you aren't ready to use Strings yet, manually create a REFERENCE.md in the root of your module directory and list out each of your module's classes, defined types, facts, functions, Puppet tasks, task plans, and resource types and providers, along with the parameters for each.
+## Changelog
 
-For each element (class, defined type, function, and so on), list:
-
-  * The data type, if applicable.
-  * A description of what the element does.
-  * Valid values, if the data type doesn't make it obvious.
-  * Default value, if any.
-
-For example:
-
-```
-### `pet::cat`
-
-#### Parameters
-
-##### `meow`
-
-Enables vocalization in your cat. Valid options: 'string'.
-
-Default: 'medium-loud'.
-```
+[CHANGELOG.md](CHANGELOG.md) is generated prior to each release via
+`pdk bundle exec rake changelog`. This process relies on labels that are applied
+to each pull request.
 
 ## Limitations
 

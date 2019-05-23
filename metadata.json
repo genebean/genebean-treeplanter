@@ -2,11 +2,16 @@
   "name": "genebean-treeplanter",
   "version": "0.1.0",
   "author": "genebean",
-  "summary": "",
+  "summary": "A Puppet module for deploying the tree-planter application",
   "license": "BSD-3-Clause",
-  "source": "",
+  "source": "https://github.com/genebean/genebean-treeplanter.git",
+  "project_page": "https://github.com/genebean/genebean-treeplanter",
+  "issues_url": "https://github.com/genebean/genebean-treeplanter/issues",
   "dependencies": [
-
+    {
+      "name": "puppetlabs/docker",
+      "version_requirement": ">= 3.5.0 < 4.0.0"
+    }
   ],
   "operatingsystem_support": [
     {
